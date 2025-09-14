@@ -16,5 +16,13 @@
     "raza": "rotwailer",
     "edad": "12",
     "genero": "macho"
+  },
+  {
+    "id": 5,
+    "mascota": "perro",
+    "nombre": "max",
+    "raza": "rotwailer",
+    "edad": "12121221",
+    "genero": "hemrba"
   }
 ]

@@ -36,14 +36,7 @@ const ordenes = readData(ordersFile);
 
 
 
-//CRUD
-// app.post('/usuarios', (req, res) => {
-//   const usuario ={ id: usuarios.length +1, ...req.body };
-//   usuarios.push(usuario);
-//   saveData(userFile, usuarios);
-//   res.status(201).json(usuario);
- 
-// });
+
 app.post('/Formulario', (req, res) => {
   const nuevoId = mascotas.length > 0 
   ? Math.max(...mascotas.map(u => u.id)) + 1
@@ -55,41 +48,9 @@ app.post('/Formulario', (req, res) => {
  
 });
 
-app.get('/usuarios', (req, res) => {    
+app.get('/mascotas', (req, res) => {    
   res.json(mascotas);
 });
-
-// // OBTENER USUARIO POR ID
-
-// app.get('/usuarios/:id', (req, res) => {
-//   const usuario = usuarios.find(u => u.id ==req.params.id);
-//   if (!usuario) return res.status(404).json({ error: 'Usuario no encontrado' });
-//   res.json(usuario);
-//   }); 
-
-// // Actualizar usuario
-
-// app.put('/usuarios/:id', (req, res) => {
-//   const index = usuarios.findIndex(u => u.id == req.params.id);
-//   if (index <0) return res.status(404).json({ error: 'Usuario no encontrado' });
-//   usuarios[index] = { id: usuarios[index].id, ...req.body };
-//   saveData(userFile, usuarios);
-//   res.json(usuarios[index]);
-//   });
-
-// // Eliminar usuario
-
-// app.delete('/usuarios/:id', (req, res) => {
-//   const index = usuarios.findIndex(u => u.id == req.params.id); 
-//   if (index <0) return res.status(404).json({ error: 'Usuario no encontrado' });
-//   usuarios.splice(index, 1);
-//   saveData(userFile, usuarios);
-//   res.status(204).end( );
-//   });
-
-
-
-
 
 
 

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 3,
+    "nombre": "jose ",
+    "edad": 37
+  },
+  {
+    "id": 2,
+    "nombre": " juan",
+    "edad": 370
+  },
+  {
+    "id": 4,
+    "mascota": "perro",
+    "nombre": "max",
+    "raza": "rotwailer",
+    "edad": "12",
+    "genero": "macho"
+  }
+]
